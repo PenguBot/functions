@@ -1,11 +1,12 @@
 // Copyright (c) 2018-2019 KlasaCommunityPlugins. All rights reserved. MIT license.
-import { Client as KlasaClient } from 'klasa';
+import { Client as KlasaClient } from "klasa";
 
-import { FunctionsClient as Client } from './lib/Client';
+import { FunctionsClient as Client } from "./lib/Client";
 export { Client };
-export { Function } from './lib/structures/Function';
-export { FunctionStore } from './lib/structures/FunctionStore';
+export { Function } from "./lib/structures/Function";
+export { FunctionStore } from "./lib/structures/FunctionStore";
 // @ts-ignore
+// eslint-disable-next-line node/exports-style
 exports[KlasaClient.plugin] = Client[KlasaClient.plugin];
 
 /**
