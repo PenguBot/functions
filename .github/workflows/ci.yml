@@ -9,7 +9,6 @@ on:
       - '.github/**'
       - 'README.md'
       - 'tsconfig.json'
-      - 'tslint.json'
 
 jobs:
   Build:
@@ -30,8 +29,8 @@ jobs:
           key: ${{ runner.os }}-14-${{ hashFiles('**/yarn.lock') }}
       - name: Install Dependencies
         run: yarn --ignore-scripts --frozen-lockfile
-      - name: Copy Config
-        run: cp src/config.example.ts src/config.ts
+      - name: Test
+        run: yarn test
       - name: Push Code
         run: |
           #!/bin/bash
