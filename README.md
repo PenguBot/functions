@@ -18,7 +18,7 @@ yarn add @kcp/functions
 1. Use `@kcp/functions` in your client.
 
 ```js
-const { Client } = require("@pengubot/klasa");
+const { Client } = require("klasa");
 Client.use(require("@kcp/functions"));
 
 new Client({ aliasFunctions: { returnMethod: "run", prefix: "funcs", enabled: true } }).login("Your Beautiful Token");

@@ -1,5 +1,5 @@
 // Copyright (c) 2018-2019 KlasaCommunityPlugins. All rights reserved. MIT license.
-import { Client, KlasaClientOptions, util } from "@pengubot/klasa";
+import { Client, KlasaClientOptions, util } from "klasa";
 import { join } from "path";
 import { FunctionStore } from "./structures/FunctionStore";
 import { OPTIONS } from "./util/CONSTANTS";

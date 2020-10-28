@@ -1,6 +1,6 @@
 {
   "name": "@kcp/functions",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A basic plugin which adds reloadable functions to Klasa",
   "homepage": "https://github.com/KlasaCommunityPlugins/functions",
   "bugs": {
@@ -23,8 +23,8 @@
     "docs": "yarn build && yarn dg --source dist --custom guides/.docconfig.json --output dist/docs.json --logging"
   },
   "peerDependencies": {
-    "@pengubot/klasa": "^1.0.1",
-    "discord.js": "12.3.1"
+    "discord.js": "12.3.1",
+    "klasa": "github:pengubot/klasa#stable"
   },
   "devDependencies": {
     "@kcp/lint": "github:KlasaCommunityPlugins/lint-files",
@@ -38,7 +38,7 @@
     "eslint-plugin-markdown": "^1.0.0-beta.6",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "@pengubot/klasa": "^1.0.1",
+    "klasa": "github:pengubot/klasa#stable",
     "typescript": "^4.0.2"
   },
   "engines": {
@@ -48,8 +48,5 @@
     "dist/",
     "README.md",
     "LICENSE"
-  ],
-  "dependencies": {
-    "@pengubot/klasa": "^1.0.1"
-  }
+  ]
 }
